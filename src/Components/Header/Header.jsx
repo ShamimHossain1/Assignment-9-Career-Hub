@@ -1,23 +1,51 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './Header.css'
+import { Button, Navbar } from 'flowbite-react';
 
 const Header = () => {
     return (
-        <div>
-            <nav className='bg-slate-800 flex justify-around items-center py-5 px-20 sticky top-0 '>
-            
-            <h2>BD Job Bank</h2>
 
-            <div className='text-white text-xl flex gap-10'>
-                <Link to="/">Shop</Link>
-                <Link to="/orders">Orders</Link>
-                <Link to="/inventory">Inventory</Link>
-                <Link to="/login">Login</Link>                
-            </div>
-            <button>Star Applying</button>
-        </nav>
+
+        <nav className='md:px-56 py-7' >
+            <Navbar
+            fluid={true}
+            rounded={true}
             
-        </div>
+        >
+            <Navbar.Brand href="https://flowbite.com/" >
+                <span className="self-center whitespace-nowrap md:text-2xl font-bold dark:text-white">
+                    BD JOB BANK
+                </span>
+            </Navbar.Brand>
+            <div className="flex md:order-2 ">
+                <Button style={ {background:' linear-gradient(90deg, #7E90FE 0%, #9873FF 100%)'}} className='px-2 py-1'>
+                Star Applying
+                </Button>
+                <Navbar.Toggle />
+            </div>
+            <Navbar.Collapse>
+                <Navbar.Link
+                    href="/"
+                    active={true}
+                >
+                    Home
+                </Navbar.Link>
+                <Navbar.Link href="/statistics">
+                    Statistics
+                </Navbar.Link>
+                <Navbar.Link href="/applied_jobs">
+                    Applied Jobs
+                </Navbar.Link>
+                <Navbar.Link href="/blog">
+                    Blog
+                </Navbar.Link>
+            </Navbar.Collapse>
+
+        </Navbar>
+        </nav>
+
+
     );
 };
 
