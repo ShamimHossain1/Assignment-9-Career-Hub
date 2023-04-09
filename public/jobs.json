@@ -1,0 +1,88 @@
+[
+    {
+      "id": "job001",
+      "img": "https://cdn.discordapp.com/attachments/1094672876969398413/1094673742359171173/google-1-1_1.png",
+      "title": "Software Engineer",
+      "company_name": "Google LLC",
+      "location": "San Francisco, CA",
+      "salary_range": "$100,000-$150,000",
+      "job_description": "We're seeking a talented software engineer to join our team and help us build the next generation of products.",
+      "job_responsibility": "Responsibilities include developing and maintaining software, writing and executing test plans, and collaborating with other engineers and designers.",
+      "requirement": "Requirements include a degree in computer science or a related field, strong coding skills in Java or C++, and experience with Agile development methodologies.",
+      "experience": "3+ years of experience",
+      "phone": "(555) 123-4567",
+      "email": "jobs@acmecorp.com"
+    },
+    {
+      "id": "job002",
+      "img": "https://cdn.discordapp.com/attachments/1094672876969398413/1094673742640197642/netflix-4_1.png",
+      "title": "Marketing Manager",
+      "company_name": "Netflix",
+      "location": "New York, NY",
+      "salary_range": "$80,000-$120,000",
+      "job_description": "We're looking for an experienced marketing manager to help us promote our products and services.",
+      "job_responsibility": "Responsibilities include developing and executing marketing campaigns, managing social media accounts, and collaborating with other departments.",
+      "requirement": "Requirements include a degree in marketing or a related field, excellent communication skills, and experience in marketing management.",
+      "experience": "5+ years of experience",
+      "phone": "(555) 123-4567",
+      "email": "jobs@bigco.com"
+    },
+    {
+      "id": "job003",
+      "img": "https://cdn.discordapp.com/attachments/1094672876969398413/1094673742862487642/tesla-9_1.png",
+      "title": "Sales Representative",
+      "company_name": "Tesla",
+      "location": "Chicago, IL",
+      "salary_range": "$50,000-$80,000",
+      "job_description": "We're seeking a sales representative to help us expand our customer base and increase revenue.",
+      "job_responsibility": "Responsibilities include prospecting and qualifying leads, conducting sales presentations, and closing deals.",
+      "requirement": "Requirements include excellent communication and interpersonal skills, a track record of sales success, and the ability to work independently.",
+      "experience": "2+ years of experience",
+      "phone": "(555) 123-4567",
+      "email": "jobs@smallco.com"
+    },
+    {
+      "id": "job004",
+      "img": "https://cdn.discordapp.com/attachments/1094672876969398413/1094673742359171173/google-1-1_1.png",
+      "title": "Graphic Designer",
+      "company_name": "Google LLC",
+      "location": "Los Angeles, CA",
+      "salary_range": "$60,000-$100,000",
+      "job_description": "We're seeking a talented graphic designer to help us create stunning visual designs for our clients.",
+      "job_responsibility": "Responsibilities include creating and editing designs using Adobe Creative Suite, collaborating with clients and other designers, and staying up-to-date with design trends and technologies.",
+      "requirement": "Requirements include a degree in graphic design or a related field, proficiency in Adobe Creative Suite, and a portfolio of previous design work.",
+      "experience": "3+ years of experience",
+      "phone": "(555) 123-4567",
+      "email": "jobs@creativeco.com"
+    },
+    {
+        "id": "job005",
+        "img": "https://cdn.discordapp.com/attachments/1094672876969398413/1094731450852585634/Group_10021.png",
+        "title": "Data Analyst",
+        "company_name": "Airbnb LLC",
+        "location": "Seattle, WA",
+        "salary_range": "$70,000-$100,000",
+        "job_description": "We're seeking a data analyst to help us collect and analyze data to inform business decisions.",
+        "job_responsibility": "Responsibilities include creating and maintaining data pipelines, performing data analysis, and communicating insights to stakeholders.",
+        "requirement": "Requirements include a degree in data science, statistics, or a related field, proficiency in SQL and a programming language such as Python or R, and experience with data visualization tools.",
+        "experience": "2+ years of experience",
+        "phone": "(555) 123-4567",
+        "email": "jobs@analyticsco.com"
+      },
+      {
+        "id": "job006",
+        "img": "https://cdn.discordapp.com/attachments/1094672876969398413/1094673742640197642/netflix-4_1.png",
+        "title": "Human Resources Manager",
+        "company_name": "Netflix",
+        "location": "Miami, FL",
+        "salary_range": "$90,000-$120,000",
+        "job_description": "We're looking for a human resources manager to lead our HR department and help us attract and retain top talent.",
+        "job_responsibility": "Responsibilities include developing and implementing HR policies and procedures, managing employee relations, and overseeing recruitment and hiring.",
+        "requirement": "Requirements include a degree in human resources or a related field, strong leadership and communication skills, and experience in HR management.",
+        "experience": "5+ years of experience",
+        "phone": "(555) 123-4567",
+        "email": "jobs@hrco.com"
+      }
+    ]
+    
+  

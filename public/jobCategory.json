@@ -1,0 +1,23 @@
+[
+    {
+
+      "title": "Software Engineer",
+      "available_positions": "300 Jobs Available",
+      "icon": "https://cdn.discordapp.com/attachments/1094672876969398413/1094672960020811846/chip_1.png"
+    },
+    {
+      "title": "Marketing Manager",
+      "available_positions": "100+ Jobs Available",
+      "icon": "https://cdn.discordapp.com/attachments/1094672876969398413/1094672960222154833/social-media_1.png"
+    },
+    {
+      "title": "Data Analyst",
+      "available_positions": "150 Jobs Available",
+      "icon": "https://cdn.discordapp.com/attachments/1094672876969398413/1094672959534288906/accounts_1.png"
+    },
+    {
+      "title": "Sales Representative",
+      "available_positions": "224 Jobs Available",
+      "icon": "https://cdn.discordapp.com/attachments/1094672876969398413/1094672959785935019/business_1.png"
+    }
+  ]
