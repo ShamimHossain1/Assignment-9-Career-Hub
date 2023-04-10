@@ -1,4 +1,6 @@
-import { Button } from 'flowbite-react';
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLocationDot, faCircleDollarToSlot} from '@fortawesome/free-solid-svg-icons';
 import React from 'react';
 import { Link } from 'react-router-dom';
 
@@ -21,8 +23,8 @@ const Applications = ({ application }) => {
                         <span className='rounded border p-1   border-blue-600 '>Full Time</span>
                     </div>
                     <div className='flex gap-5 text-lg text-slate-500'>
-                        <p>{location}</p>
-                        <p>{salary_range}</p>
+                    <p><FontAwesomeIcon icon={faLocationDot}/> {location}</p>
+                <p><FontAwesomeIcon icon={faCircleDollarToSlot}/> {salary_range}</p>
                     </div>
                 </div>
             </div>

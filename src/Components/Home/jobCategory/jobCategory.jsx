@@ -21,7 +21,7 @@ const JobCategory = () => {
                 <p className='text-gray-500 mb-6'>Explore thousands of job opportunities with all the information you need. Its your future</p>
 
             </div>
-            <div className='flex justify-center gap-6 px-80'>
+            <div className='lg:flex justify-center gap-6 lg:px-80 px-5'>
 
 
                 {
