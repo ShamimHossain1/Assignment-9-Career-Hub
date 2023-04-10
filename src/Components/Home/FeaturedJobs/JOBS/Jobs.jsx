@@ -1,5 +1,6 @@
 import { Button } from 'flowbite-react';
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 
 const Jobs = ({job}) => {
@@ -19,7 +20,7 @@ const Jobs = ({job}) => {
                 <p>{location}</p>
                 <p>{salary_range}</p>
             </div>
-            {/* <Link to={'/job_details'}><Button  style={ {background:' linear-gradient(90deg, #7E90FE 0%, #9873FF 100%)'}} className='px-3 py-1 ' >View Details</Button></Link> */}
+            <Link to={'/job_details'} state={{details:job}} ><Button  style={ {background:' linear-gradient(90deg, #7E90FE 0%, #9873FF 100%)'}} className='px-3 py-1 ' >View Details</Button></Link>
             
         </div>
     );
