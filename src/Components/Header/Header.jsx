@@ -27,18 +27,21 @@ const Header = () => {
             <Navbar.Collapse>
                 <Navbar.Link
                     href="/"
-                    active={true}
+                
                 >
-                    Home
+                    <span className='text-base'>Home</span>
                 </Navbar.Link>
                 <Navbar.Link href="/statistics">
-                    Statistics
+                <span className='text-base'>Statistics</span>
+                  
                 </Navbar.Link>
                 <Navbar.Link href="/applied_jobs">
-                    Applied Jobs
+                <span className='text-base'>Applied Jobs</span>
+                   
                 </Navbar.Link>
                 <Navbar.Link href="/blog">
-                    Blog
+                <span className='text-base'>Blog</span>
+                    
                 </Navbar.Link>
             </Navbar.Collapse>
 

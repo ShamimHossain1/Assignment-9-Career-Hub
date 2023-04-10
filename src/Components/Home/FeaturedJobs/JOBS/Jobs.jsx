@@ -8,19 +8,21 @@ const Jobs = ({job}) => {
     
       
     return (
-        <div className='border border-gray-300 rounded-lg p-8'>
-            <img className='w-3/12 mb-3' src={img} alt="" />
-            <h2 className='font-semibold text-2xl text-slate-700'>{title}</h2>
-            <h4 className='text-slate-500'>{company_name}</h4>
-            <div className='flex gap-4'>
-                <span className='rounded '>Remote</span>
-                <span>Full Time</span>
+        <div className='border border-gray-300 rounded-lg flex flex-col p-10 gap-4 mt-5 font-semibold'>
+            <img className='w-4/12 mb-3' src={img} alt="" />
+            <h2 className=' text-3xl text-slate-700'>{title}</h2>
+            <h4 className='text-slate-500 text-2xl'>{company_name}</h4>
+            <div className='flex gap-4 text-blue-600 '>
+                <span className='rounded border p-1  border-blue-600 '>Remote</span>
+                <span className='rounded border p-1  border-blue-600 '>Full Time</span>
             </div>
-            <div className='flex gap-5'>
+            <div className='flex gap-5 text-lg text-slate-500'>
                 <p>{location}</p>
                 <p>{salary_range}</p>
             </div>
-            <Link to={'/job_details'} state={{details:job}} ><Button  style={ {background:' linear-gradient(90deg, #7E90FE 0%, #9873FF 100%)'}} className='px-3 py-1 ' >View Details</Button></Link>
+          <div className='mt-auto'>
+          <Link to={'/job_details'} state={{details:job}} ><Button  style={ {background:' linear-gradient(90deg, #7E90FE 0%, #9873FF 100%)'}} className='px-3 py-1 ' >View Details</Button></Link>
+          </div>
             
         </div>
     );

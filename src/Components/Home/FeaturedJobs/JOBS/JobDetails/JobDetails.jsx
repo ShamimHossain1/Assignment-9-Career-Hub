@@ -1,12 +1,25 @@
 import { Button } from 'flowbite-react';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
+import { addToDb, getShoppingCart } from '../../../../FakeDB/FakeDB';
 
 
 const JobDetails = () => {
 
     const locations = useLocation();
-   const {company_name, email, experience, job_description, job_responsibility, location, phone, requirement, salary_range, title, id}= locations.state?.details
+   const {company_name, email, experience, job_description, job_responsibility, location, phone, requirement, salary_range, title, id}= locations.state?.details;
+   const [appliedJob, setAppliedJob] = useState([])
+
+const handleClick = (job) =>{
+   
+    const newAppliedJobs = [...appliedJob, job]
+    // console.log(newAppliedJobs)
+    setAppliedJob(newAppliedJobs);
+    addToDb(job.id)
+}
+
+
+
   
     return (
         <div>
@@ -36,8 +49,8 @@ const JobDetails = () => {
                         <p><span className='font-semibold'>Address :</span> <span className='text-gray-500'>{location}</span></p>
 
                     </div>
-                    <Button  style={ {background:' linear-gradient(90deg, #7E90FE 0%, #9873FF 100%)'}} className='px-2 py-1 mt-5 w-full'>Apply Now</Button>
-                    {/* onClick={()=>handleClick(id)} */}
+                    <Button onClick={()=>handleClick(locations.state?.details)} style={ {background:' linear-gradient(90deg, #7E90FE 0%, #9873FF 100%)'}} className='px-2 py-1 mt-5 w-full'><span className='text-lg'>Apply Now</span></Button>
+                    
                 </div>
             </div>
         </div>
