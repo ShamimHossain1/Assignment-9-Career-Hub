@@ -13,7 +13,7 @@ const Header = () => {
             rounded={true}
             
         >
-            <Navbar.Brand href="https://flowbite.com/" >
+            <Navbar.Brand >
                 <span className="self-center whitespace-nowrap md:text-2xl font-bold dark:text-white">
                     BD JOB BANK
                 </span>
