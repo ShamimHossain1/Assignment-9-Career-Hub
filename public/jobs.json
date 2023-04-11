@@ -11,7 +11,9 @@
       "requirement": "Requirements include a degree in computer science or a related field, strong coding skills in Java or C++, and experience with Agile development methodologies.",
       "experience": "3+ years of experience",
       "phone": "(555) 123-4567",
-      "email": "jobs@acmecorp.com"
+      "email": "jobs@acmecorp.com",
+      "time" : "Full Time",
+      "type":"Remote"
     },
     {
       "id": "job002",
@@ -25,7 +27,9 @@
       "requirement": "Requirements include a degree in marketing or a related field, excellent communication skills, and experience in marketing management.",
       "experience": "5+ years of experience",
       "phone": "(555) 123-4567",
-      "email": "jobs@bigco.com"
+      "email": "jobs@bigco.com",
+      "time" : "Part-Time",
+      "type":"Remote"
     },
     {
       "id": "job003",
@@ -39,7 +43,9 @@
       "requirement": "Requirements include excellent communication and interpersonal skills, a track record of sales success, and the ability to work independently.",
       "experience": "2+ years of experience",
       "phone": "(555) 123-4567",
-      "email": "jobs@smallco.com"
+      "email": "jobs@smallco.com",
+      "time" : "Full Time",
+      "type":"Onsite"
     },
     {
       "id": "job004",
@@ -53,7 +59,9 @@
       "requirement": "Requirements include a degree in graphic design or a related field, proficiency in Adobe Creative Suite, and a portfolio of previous design work.",
       "experience": "3+ years of experience",
       "phone": "(555) 123-4567",
-      "email": "jobs@creativeco.com"
+      "email": "jobs@creativeco.com",
+      "time" : "Full Time",
+      "type":"Remote"
     },
     {
         "id": "job005",
@@ -67,7 +75,9 @@
         "requirement": "Requirements include a degree in data science, statistics, or a related field, proficiency in SQL and a programming language such as Python or R, and experience with data visualization tools.",
         "experience": "2+ years of experience",
         "phone": "(555) 123-4567",
-        "email": "jobs@analyticsco.com"
+        "email": "jobs@analyticsco.com",
+        "time" : "Part-Time",
+        "type":"Remote"
       },
       {
         "id": "job006",
@@ -81,7 +91,9 @@
         "requirement": "Requirements include a degree in human resources or a related field, strong leadership and communication skills, and experience in HR management.",
         "experience": "5+ years of experience",
         "phone": "(555) 123-4567",
-        "email": "jobs@hrco.com"
+        "email": "jobs@hrco.com",
+        "time" : "Full Time",
+        "type":"Onsite"
       }
     ]
     

@@ -6,8 +6,8 @@ import { Link } from 'react-router-dom';
 
 
 const Jobs = ({job}) => {
-    const{img, title, company_name, location,salary_range}=job;
-    
+    const{img, title, company_name, location,salary_range,type, time}=job;
+    console.log(type)
       
     return (
         <div className='border border-gray-300 rounded-lg flex flex-col p-10 gap-4 mt-5 font-semibold'>
@@ -15,8 +15,8 @@ const Jobs = ({job}) => {
             <h2 className=' lg:text-3xl text-2xl text-slate-700'>{title}</h2>
             <h4 className='text-slate-500 lg:text-2xl'>{company_name}</h4>
             <div className='flex gap-4 text-blue-600 '>
-                <span className='rounded border p-1  border-blue-600 '>Remote</span>
-                <span className='rounded border p-1  border-blue-600 '>Full Time</span>
+                <span className='rounded border p-1  border-blue-600 '>{type}</span>
+                <span className='rounded border p-1  border-blue-600 '>{time}</span>
             </div>
             <div className='lg:flex gap-5 text-lg text-slate-500'>
                 <p><FontAwesomeIcon icon={faLocationDot}/> {location}</p>

@@ -3,7 +3,9 @@ import React, { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import { addToDb, getShoppingCart } from '../../../../FakeDB/FakeDB';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLocationDot, faCircleDollarToSlot, faPhone, faMailBulk, faMailReply, faMessage, faMailReplyAll, faMailForward, faCalendar, faPeopleArrows, faBriefcase } from '@fortawesome/free-solid-svg-icons';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { faLocationDot, faCircleDollarToSlot, faPhone, faMailBulk, faMailReply, faMessage, faMailReplyAll, faMailForward, faCalendar, faPeopleArrows, faBriefcase, faNotesMedical } from '@fortawesome/free-solid-svg-icons';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 
 
@@ -13,13 +15,27 @@ const JobDetails = () => {
     const { company_name, email, experience, job_description, job_responsibility, location, phone, requirement, salary_range, title, id } = locations.state?.details;
     const [appliedJob, setAppliedJob] = useState([])
 
+
+
+
+
+
     const handleClick = (job) => {
 
         const newAppliedJobs = [...appliedJob, job]
-        // console.log(newAppliedJobs)
         setAppliedJob(newAppliedJobs);
-        addToDb(job.id)
+        addToDb(job.id)        
+            if (newAppliedJobs.length >= 2) {
+                toast("Already Applied");
+            }
+            else {
+                toast("Applied");
+            }
+
+
+        
     }
+
 
 
 
@@ -56,6 +72,7 @@ const JobDetails = () => {
 
                 </div>
             </div>
+            <ToastContainer />
         </div>
     );
 };

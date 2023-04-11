@@ -1,13 +1,15 @@
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLocationDot, faCircleDollarToSlot} from '@fortawesome/free-solid-svg-icons';
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './applications.css'
 
 const Applications = ({ application }) => {
 
-    const { img, title, company_name, location, salary_range } = application;
+    const { img, title, company_name, location, salary_range,type, time } = application;
+
 
 
     return (
@@ -20,8 +22,8 @@ const Applications = ({ application }) => {
                     <h2 className=' lg:text-3xl text-slate-700'>{title}</h2>
                     <h4 className='text-slate-500 lg:text-2xl text-sm'>{company_name}</h4>
                     <div className='flex gap-4 text-blue-600 lg:text-base type '>
-                        <span className='rounded border p-1  border-blue-600 '>Remote</span>
-                        <span className='rounded border p-1    border-blue-600 '>Full Time</span>
+                        <span className='rounded border p-1  border-blue-600 '>{type}</span>
+                        <span className='rounded border p-1    border-blue-600 '>{time}</span>
                     </div>
                     <div className='flex gap-5 lg:text-lg salary text-slate-500'>
                     <p><FontAwesomeIcon icon={faLocationDot}/> {location}</p>
@@ -32,6 +34,7 @@ const Applications = ({ application }) => {
 
             <Link to={'/job_details'} state={{ details: application }} ><button style={{ background: ' linear-gradient(90deg, #7E90FE 0%, #9873FF 100%)' }} 
             className='lg:px-5 lg:py-3  rounded-lg text-white lg:font-semibold lg:text-lg text-xs view-btn  ' >View Details</button></Link>
+            
 
         </div>
     );
