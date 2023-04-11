@@ -16,27 +16,18 @@ const JobDetails = () => {
     const [appliedJob, setAppliedJob] = useState([])
 
 
-
-
-
-
     const handleClick = (job) => {
 
         const newAppliedJobs = [...appliedJob, job]
         setAppliedJob(newAppliedJobs);
-        addToDb(job.id)        
-            if (newAppliedJobs.length >= 2) {
-                toast("Already Applied");
-            }
-            else {
-                toast("Applied");
-            }
-
-
-        
+        addToDb(job.id)
+        if (newAppliedJobs.length >= 2) {
+            toast("Already Applied");
+        }
+        else {
+            toast("Applied");
+        }
     }
-
-
 
 
 

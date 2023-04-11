@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 
 const Jobs = ({job}) => {
     const{img, title, company_name, location,salary_range,type, time}=job;
-    console.log(type)
+    // console.log(type)
       
     return (
         <div className='border border-gray-300 rounded-lg flex flex-col p-10 gap-4 mt-5 font-semibold'>
