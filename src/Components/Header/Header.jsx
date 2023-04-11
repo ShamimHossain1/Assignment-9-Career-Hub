@@ -7,14 +7,14 @@ const Header = () => {
     return (
 
 
-        <nav className='md:px-56 py-7' >
+        <nav className='md:px-56 md:py-7 py-2' >
             <Navbar
             fluid={true}
             rounded={true}
             
         >
             <Navbar.Brand >
-                <span className="self-center whitespace-nowrap md:text-2xl font-bold dark:text-white">
+                <span className="self-center whitespace-nowrap md:text-2xl text-xl font-bold dark:text-white">
                     BD JOB BANK
                 </span>
             </Navbar.Brand>

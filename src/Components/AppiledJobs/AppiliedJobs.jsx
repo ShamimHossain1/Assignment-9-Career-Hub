@@ -36,12 +36,12 @@ const AppiliedJobs = () => {
 
 
         <div>
-            <div className='flex items-center gap-96' style={{ background: 'linear-gradient(90deg, rgba(126, 144, 254, 0.05) 0%, rgba(152, 115, 255, 0.05) 100%)' }}>
-                <img src="https://cdn.discordapp.com/attachments/1094672876969398413/1094939122990334053/Vector.png" alt="" />
-                <h2 className='text-4xl font-semibold mb-5 ml-36'>Applied Jobs</h2>
+            <div className='flex items-center lg:gap-96 py-5' style={{ background: 'linear-gradient(90deg, rgba(126, 144, 254, 0.05) 0%, rgba(152, 115, 255, 0.05) 100%)' }}>
+                <img className='lg:w-auto w-1/3' src="https://cdn.discordapp.com/attachments/1094672876969398413/1094939122990334053/Vector.png" alt="" />
+                <h2 className='lg:text-4xl text-2xl font-semibold mb-5 lg:ml-36 ml-5'>Applied Jobs</h2>
             </div>
 
-            <div className='w-2/3 mx-auto mt-28'>
+            <div className='lg:w-2/3 p-3 mx-auto lg:mt-28 mt-10'>
 
                 {
                     applications.map(application => <Applications application={application} key={application.id}></Applications>)
