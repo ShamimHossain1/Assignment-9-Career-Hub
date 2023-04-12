@@ -22,10 +22,11 @@ const JobDetails = () => {
         setAppliedJob(newAppliedJobs);
         addToDb(job.id)
         if (newAppliedJobs.length >= 2) {
-            toast("Already Applied");
+            toast("You have already Applied");
         }
         else {
-            toast("Applied");
+
+            toast("Application Completed");
         }
     }
 
