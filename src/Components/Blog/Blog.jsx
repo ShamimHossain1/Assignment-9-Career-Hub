@@ -4,16 +4,17 @@ const Blog = () => {
     return (
         <div className='question-container lg:px-80'>
         <div className='question'>
-            <h3>1. When should you use contextAPI? </h3>
-            <p>Ans: The difference between Props and state is that, The state is owned locally, and the component itself updates it. Props are owned and read only by a parent. Props can be changed only if an upstream shift is caused by a callback function passed on to the child.</p>
+            <h3>1. When should you use context API? </h3>
+            <p>Ans: Context API allows you to share data between components without having to pass the data through every level of the component tree manually. If i have to applied a function across multiple components then i can use Context API to manage the function data and update it as necessary.</p>
         </div>
         <div className='question'>
             <h3>2. What is custom Hook? </h3>
-            <p>Ans: useState is React Hook that allows you to add state to a functional component. It returns an array with two values: the current state and a function to update it. The Hook takes an initial state value as an argument and returns an updated state value whenever the setter function is called.</p>
+            <p>Ans: Custom hook is a function that uses one or more of the existing React hooks to provide additional functionality that can be reused across multiple components. Custom hook is a way to share logic between components.</p>
         </div>
         <div className='question'>
-            <h3>3. what is useRef, useMemo? </h3>
-            <p>Ans: The useEffect in react js allows you to perform side effects in your components. The react useEffect examples of side effects include retrieving data, direct DOM updates, and timers.</p>
+            <h3>3. what is useRef & useMemo? </h3>
+            <p>Ans: useRef is a hook that returns a mutable ref object whose current property is initialized to the provided argument or undefined  <br />
+                useMemo is a hook that memoizes the result of a function, caching its return value and returning it only when its dependencies have changed. </p>
         </div>
       
 
