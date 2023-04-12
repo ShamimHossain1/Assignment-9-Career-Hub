@@ -12,6 +12,7 @@ import JobDetails from './Components/Home/FeaturedJobs/JOBS/JobDetails/JobDetail
 import AppiliedJobs from './Components/AppiledJobs/AppiliedJobs';
 import Blog from './Components/Blog/Blog';
 import Chart from './Components/Chart/Chart';
+import Error from './Components/404 Page/Error';
 
 const router = createBrowserRouter([
   
@@ -41,6 +42,10 @@ const router = createBrowserRouter([
       }
     ]
   },
+  {
+    path:'*',
+    element:<Error></Error>
+  }
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
