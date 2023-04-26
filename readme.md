@@ -6,7 +6,7 @@ This is a job application web site. Here you can find some job category list and
 
 *Home Page :
 
-In home page the nav is form tailwind component flowbite. The job category list section is made by custom json. In Featured jobs section you can find 4 jobs and also can see a showmore button . By clicking that button you can see  more jobs which come from json data. Each job section has a details button. By clicking that button a new page will apper which will show all the details of that job. I use useLocation() hook to pass data of each job to the details page. In this page there is a Apply button. If you click that button a message will appear that application done. If you click that button multiple time another message will appear because i use condition in this section.
+In home page the nav is form tailwind component flowbite. The job category list section is made by custom json. In Featured jobs section you can find 4 jobs and also can see a show more button . By clicking that button you can see  more jobs which come from json data. Each job section has a details button. By clicking that button a new page will apper which will show all the details of that job. I use useLocation() hook to pass data of each job to the details page. In this page there is a Apply button. If you click that button a message will appear that application done. If you click that button multiple time another message will appear because i use condition in this section.
 
 *Statistics page:
 
